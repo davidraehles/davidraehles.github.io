@@ -4,7 +4,6 @@
 
     body {
         background-image: linear-gradient(-180deg, #2894B8, #FF333D);
-        <!--background:url("img/tu-dresden-informatik.jpg");-->
         color: white;
         text-align: center;
         font-size: 1em;
@@ -18,8 +17,8 @@
 
 
 	img {
-		vertical-align: middle;
-		padding: 2% 5%;
+	vertical-align: middle;
+	padding: 2% 5%;
         margin-bottom: 2%;
         max-width: 100%;
         opacity: 1.0;
