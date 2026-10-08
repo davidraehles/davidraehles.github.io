@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Treehouse at the Ferlhof</title>
+<meta name="description" content="Packing list and ideas for the Treehouse Kindergarten weekend at the Ferlhof.">
+<meta property="og:title" content="Ferlhof weekend packing list">
+<meta property="og:description" content="Tick-off packing list and ideas for parents joining the Treehouse Kindergarten weekend at the Ferlhof.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://davidsho.me/ferlhof/">
+<meta property="og:image" content="https://davidsho.me/ferlhof/logo.png">
+<meta name="theme-color" content="#FAFCF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151714" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8C%B3%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  --paper:#FAFCF8; --ink:#2E2D29; --muted:#6E6C62; --green:#009A44;
+  --line:#DCDED5; --chip:#E6F3E9; --raise:#FFFFFF;
+  --night:#17130F; --night-ink:#F3E6D3; --night-muted:#B8A48C; --ember:#F2902B; --night-line:#3A2E24;
+  --safe-t:env(safe-area-inset-top,0px); --safe-b:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#151714; --ink:#E9EAE4; --muted:#A3A196; --green:#3CC373; --line:#2E322C; --chip:#1E2A20; --raise:#1B1E1A; --night:#0B0907;}}
+:root[data-theme="dark"]{--paper:#151714; --ink:#E9EAE4; --muted:#A3A196; --green:#3CC373; --line:#2E322C; --chip:#1E2A20; --raise:#1B1E1A; --night:#0B0907;}
+html{scroll-padding-top:calc(var(--safe-t) + 128px);-webkit-text-size-adjust:100%}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 "Atkinson Hyperlegible",system-ui,-apple-system,sans-serif;padding-bottom:var(--safe-b)}
+.wrap{max-width:680px;margin:0 auto;padding:0 20px}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--green);outline-offset:2px;border-radius:6px}
+
+/* Header */
+header{padding:calc(var(--safe-t) + 24px) 0 8px}
+.logo{display:block;width:min(240px,60vw);height:auto;margin:0 0 10px -6px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo{background:#FAFCF8;border-radius:14px;padding:10px 12px;margin-left:0}}
+:root[data-theme="dark"] .logo{background:#FAFCF8;border-radius:14px;padding:10px 12px;margin-left:0}
+h1{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:clamp(2.5rem,11vw,4.2rem);line-height:.92;letter-spacing:-.03em;margin:0 0 12px;color:var(--green)}
+.sub{margin:0;color:var(--muted);max-width:52ch}
+.wx{display:grid;grid-template-columns:repeat(3,1fr);margin:20px 0 6px;border:2px solid var(--green);border-radius:16px;overflow:hidden;background:var(--raise)}
+.wx div{padding:12px 12px 14px;border-left:1px solid var(--line)}
+.wx div:first-child{border-left:none}
+.wx div.wet{background:var(--chip)}
+.wx b{display:block;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:1.05rem}
+.wx .tmp{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:var(--green);line-height:1.1;margin:4px 0 2px;font-variant-numeric:tabular-nums}
+.wx .tmp span{font-weight:500;font-size:1.1rem;color:var(--muted)}
+.wx p{margin:0;font-size:.85rem;color:var(--muted);line-height:1.35}
+.wxnote{font-size:.85rem;color:var(--muted);margin:6px 0 0}
+
+/* Sticky bar with tabs */
+.bar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:calc(var(--safe-t) + 10px) 0 10px;border-bottom:1px solid var(--line);margin-top:18px}
+.tabs{display:flex;gap:4px;background:var(--chip);border-radius:999px;padding:4px}
+.tabs a{flex:1;text-align:center;text-decoration:none;color:var(--ink);font-weight:700;padding:8px 12px;border-radius:999px;font-size:.95rem}
+.tabs a[aria-current="page"]{background:var(--green);color:var(--paper)}
+.prog{display:flex;align-items:center;gap:12px;margin-top:10px}
+.meter{flex:1;height:8px;border-radius:4px;background:var(--chip);overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--green);border-radius:4px;transition:width .35s ease}
+.count{font-weight:700;font-variant-numeric:tabular-nums;font-size:.95rem;min-width:4.5em;text-align:right}
+.jump{display:flex;align-items:center;gap:6px;overflow-x:auto;margin:10px -20px 0;padding:0 20px 2px;scrollbar-width:none}
+.jump::-webkit-scrollbar{display:none}
+.jump a{flex:none;display:inline-block;line-height:1.4;height:auto;font-size:.85rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:4px 11px;white-space:nowrap;background:var(--raise)}
+.jump a.full{border-color:var(--green);color:var(--green)}
+.jump a.fire{background:var(--night);color:var(--ember);border-color:var(--night)}
+.tools{display:flex;gap:8px;margin:18px 0 0;flex-wrap:wrap}
+.tools button{font-size:.88rem;border:1px solid var(--line);background:transparent;border-radius:999px;padding:6px 14px}
+.tools button[aria-pressed="true"]{background:var(--green);color:var(--paper);border-color:var(--green)}
+
+/* Lists */
+section{padding:28px 0 8px}
+h2{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.6rem;letter-spacing:-.02em;margin:0;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+h2 small{white-space:nowrap;font-family:"Atkinson Hyperlegible",sans-serif;font-weight:400;font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.intro{color:var(--muted);margin:4px 0 10px;font-size:.95rem}
+ul{list-style:none;margin:0;padding:0}
+li{border-top:1px solid var(--line)}
+li:last-child{border-bottom:1px solid var(--line)}
+label{display:flex;gap:14px;align-items:flex-start;padding:11px 2px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+input[type=checkbox]{appearance:none;-webkit-appearance:none;flex:none;width:24px;height:24px;margin:1px 0 0;border:2px solid var(--muted);border-radius:7px;display:grid;place-content:center;cursor:pointer;transition:background .15s,border-color .15s}
+input[type=checkbox]::after{content:"";width:12px;height:7px;border-left:3px solid var(--paper);border-bottom:3px solid var(--paper);transform:rotate(-45deg) translate(1px,-1px) scale(.4);opacity:0;transition:transform .18s,opacity .18s}
+input[type=checkbox]:checked{background:var(--green);border-color:var(--green)}
+input[type=checkbox]:checked::after{opacity:1;transform:rotate(-45deg) translate(1px,-1px) scale(1)}
+.t{display:block}
+.n{display:block;font-size:.88rem;color:var(--muted)}
+li.done .t{text-decoration:line-through;color:var(--muted)}
+body.hide li.done{display:none}
+.add{display:flex;gap:8px;margin:10px 0 0}
+.add input{flex:1;min-width:0;font:inherit;font-size:.95rem;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:transparent;color:inherit}
+.add button{font-size:.9rem;border:1px solid var(--line);background:transparent;border-radius:999px;padding:6px 14px}
+.rm{margin-left:auto;border:none;background:none;padding:0 6px;color:var(--muted);font-size:1.2rem;line-height:1}
+
+/* Night */
+.fire{margin-top:40px;background:var(--night);color:var(--night-ink);background-image:radial-gradient(ellipse 70% 280px at 50% 100%,rgba(242,144,43,.28),transparent 70%)}
+.fire section{padding:40px 0 48px}
+.fire h2{color:var(--ember);font-size:2rem}
+.fire h2 small,.fire .intro,.fire .n,.fire li.done .t{color:var(--night-muted)}
+.fire li{border-color:var(--night-line)}
+.fire input[type=checkbox]{border-color:var(--night-muted)}
+.fire input[type=checkbox]:checked{background:var(--ember);border-color:var(--ember)}
+.fire input[type=checkbox]::after{border-color:var(--night)}
+.fire .add input,.fire .add button,.fire .tools button{border-color:var(--night-line);color:var(--night-ink)}
+.fire h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:500;font-size:1.15rem;margin:22px 0 4px;color:var(--night-ink)}
+.done-msg{display:none;margin:18px 0 0;padding:14px 16px;border-radius:14px;background:var(--chip);color:var(--ink);font-weight:700}
+.done-msg.show{display:block}
+
+/* Ideas */
+.idea{padding:16px 0;border-top:1px solid var(--line)}
+.idea:last-child{border-bottom:1px solid var(--line)}
+.idea h4{margin:0 0 4px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.15rem}
+.idea p{margin:0;color:var(--muted)}
+.idea .need{display:block;margin-top:6px;font-size:.85rem;color:var(--green)}
+.fire .idea{border-color:var(--night-line)}
+.fire .idea p{color:var(--night-muted)}
+.fire .idea h4{color:var(--night-ink)}
+.fire .idea .need{color:var(--ember)}
+.tip{margin:28px 0 0;padding:16px;border-radius:14px;border:1px solid var(--night-line);color:var(--night-ink)}
+footer{padding:24px 0 calc(var(--safe-b) + 36px);background:var(--night);color:var(--night-muted);font-size:.9rem}
+footer p{margin:0}
+[hidden]{display:none!important}
+@media (max-width:420px){.wx div{padding:10px 8px 12px}.wx .tmp{font-size:1.35rem}}
+@media print{
+  :root{--paper:#fff;--ink:#000;--muted:#444;--line:#ccc;--night:#fff;--night-ink:#000;--night-muted:#444;--night-line:#ccc;--ember:#000}
+  .bar,.tools,.add,.rm,.done-msg,footer{display:none!important}
+  body{font-size:12pt}
+  .fire{margin-top:0;background:none!important}
+  .fire section{padding:16px 0}
+  section,li{break-inside:avoid}
+  #view-ideas[hidden]{display:block!important}
+  input[type=checkbox]{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <img class="logo" src="logo.png" alt="Treehouse Kindergarten" width="240" alt="Treehouse e.V." width="640" height="371">
+  <h1>Ferlhof weekend</h1>
+  <p class="sub">Cool and wet. A dry Friday, then rain on Saturday and showers on Sunday, with days around 13° and nights down to 8°.</p>
+  <div class="wx" aria-label="Weather forecast">
+    <div><b>Fri 9 Oct</b><div class="tmp">16° <span>/ 5°</span></div><p>Mostly friendly, around 7 h of sun. Light rain from the evening.</p></div>
+    <div class="wet"><b>Sat 10 Oct</b><div class="tmp">13° <span>/ 9°</span></div><p>Rain all day, over 90 %. Evening showers 50 %, clearing overnight.</p></div>
+    <div class="wet"><b>Sun 11 Oct</b><div class="tmp">13° <span>/ 8°</span></div><p>Light showers, 70 %. Breezy, feels around 6° early.</p></div>
+  </div>
+  <p class="wxnote">Forecast from wetterdienst.de, checked Thu 8 Oct. Sunset around 18:40.</p>
+</header>
+
+<div class="bar"><div class="wrap">
+  <nav class="tabs" aria-label="Views"><a href="#/pack" data-view="pack">Packing list</a><a href="#/ideas" data-view="ideas">Ideas</a></nav>
+  <div id="packbar">
+    <div class="prog"><div class="meter" aria-hidden="true"><i id="meter"></i></div><span class="count" id="count">0 / 0</span></div>
+    <div class="jump" id="jump"></div>
+  </div>
+</div></div>
+
+<div id="view-pack">
+  <main class="wrap">
+    <div class="tools"><button id="hide" aria-pressed="false">Hide packed</button><button id="reset">Untick all</button><button id="share">Share with parents</button><button id="print">Print</button></div>
+    <p class="done-msg" id="donemsg" role="status">All packed. See you at the Ferlhof.</p>
+    <div id="day"></div>
+  </main>
+  <div class="fire"><div class="wrap" id="night"></div></div>
+</div>
+
+<div id="view-ideas" hidden>
+  <main class="wrap" id="ideas-day"></main>
+  <div class="fire"><div class="wrap" id="ideas-night"></div></div>
+</div>
+
+<footer><div class="wrap"><p>Ticks are saved on this device only, so every parent gets their own list. Check the forecast again on Friday morning.</p></div></footer>
+
+<script>
+const SECTIONS=[
+ {id:"docs",title:"Papers and basics",intro:"",items:[
+  ["ID and both health insurance cards"],
+  ["Cash for the weekend","100 € per person, 50 € for kids aged 0 to 3. Parent plus child 4 or older: 200 €. Parent plus child under 4: 150 €"],
+  ["Phone, charger, power bank"],
+  ["Car seat"]]},
+ {id:"sleep",title:"Sleeping in an unheated room",intro:"Rooms will likely sit around 10 to 12° at night. Pack for that, not for the forecast low.",items:[
+  ["Your sleeping bag, comfort rating 5° or lower"],
+  ["Kids' sleeping bag, warm rated","Kids lose heat fast; check the comfort rating, not the extreme one"],
+  ["Fitted sheet or sleeping bag liner","Mattresses without bedding can feel cold and clammy"],
+  ["Two pillows"],
+  ["Warm pyjamas plus a fleece layer for both of you"],
+  ["Wool socks and a thin beanie for sleeping"],
+  ["Hot water bottle","Ten minutes in the sleeping bag before bedtime works wonders"],
+  ["Extra wool blanket to go over the child"],
+  ["Cuddly toy and night light"],
+  ["Baby monitor or walkie talkies","Test the range to the fire pit on arrival"]]},
+ {id:"kidclothes",title:"Kid: clothes",intro:"Saturday is a washout and Sunday showery. Expect to change everything at least once a day.",items:[
+  ["Matschhose and rain jacket","The single most important item this weekend"],
+  ["Gummistiefel plus warm wool socks to go inside"],
+  ["Second pair of shoes","Boots will be wet inside by Saturday afternoon"],
+  ["Two wool or thermal base layers"],
+  ["Two fleece or warm mid layers","One drying, one wearing"],
+  ["Warm jacket that fits under the rain jacket"],
+  ["Hat, waterproof gloves plus a spare pair, neck tube"],
+  ["Three full spare outfits","Trousers, tops, underwear"],
+  ["Six pairs of socks"],
+  ["Hausschuhe for indoors"]]},
+ {id:"parentclothes",title:"Parent: clothes",intro:"",items:[
+  ["Proper rain jacket and rain trousers"],
+  ["Waterproof boots plus a dry pair of shoes"],
+  ["Base layer, fleece, warm jacket"],
+  ["Warm hat and gloves for the fire"],
+  ["Two changes of clothes"],
+  ["Wool socks, several pairs"]]},
+ {id:"care",title:"Wash bag and towels",intro:"Towels are not provided.",items:[
+  ["Two towels","Quick dry ones if you have them"],
+  ["Small towel for drying muddy hands and boots"],
+  ["Toothbrushes and toothpaste"],
+  ["Children's fever and pain medicine","Plus the dosing syringe"],
+  ["Plasters and disinfectant spray"],
+  ["Tick tweezers","Ticks are still active in mild October weather"],
+  ["Wet wipes and hand sanitiser","Hands after animals, before eating"],
+  ["Nappies or pull ups, if still needed"],
+  ["Lip balm and rich face cream","Wet wind dries small cheeks"],
+  ["Tissues"]]},
+ {id:"food",title:"Food and drink",intro:"All meals are provided, including Stockbrot and sausages at the fire.",items:[
+  ["Refillable water bottles"],
+  ["Thermos with hot tea or hot chocolate","Wet and 10° feels colder than you think"],
+  ["Snack box for between meals"]]},
+ {id:"wet",title:"Rain kit",intro:"The difference between a fun wet weekend and a miserable one.",items:[
+  ["Big bags for muddy clothes and boots"],
+  ["Newspaper to stuff wet boots overnight"],
+  ["Small foldable drying line and pegs"],
+  ["Umbrella"],
+  ["Dry bag or plastic bag for spare clothes in your day pack"]]},
+ {id:"car",title:"For the drive",intro:"",items:[
+  ["Spare outfit and towel within reach in the car"],
+  ["Toniebox or audiobooks"],
+  ["Sick bag, just in case"]]},
+ {id:"kidfun",title:"Keeping the kid busy by day",intro:"The farm animals do most of the work. Saturday will be rainy, so lean into puddles outside and pack for a few indoor hours.",items:[
+  ["Magnifying glass and bug viewer","Rain brings out snails and worms"],
+  ["Small bucket and shovel","Puddle and mud kitchen time"],
+  ["Paper bag for leaves and chestnuts"],
+  ["Glue stick, crayons, paper","Leaf pictures and drawing the animals indoors"],
+  ["Play dough or modelling clay","Quiet indoor hour on Saturday"],
+  ["Sticker book"],
+  ["Uno Junior or a memory game"],
+  ["Two favourite picture books"],
+  ["Kids' headlamp","A dusk walk feels like a big adventure"]]}
+];
+const NIGHT={id:"fire",title:"Around the fire",intro:"Child asleep, monitor on. Saturday evening carries a 50 % shower risk and about 9°, so pack for damp, chilly and late.",groups:[
+ ["Staying warm and dry",[
+  ["Waterproof sit pad","The farm's seats will be wet after the rain"],
+  ["Wool blanket"],
+  ["Rain poncho or rain jacket over warm layers"],
+  ["Warmest hat, gloves, thick socks","The fire only warms your front"],
+  ["Headlamp with red light mode"],
+  ["Extra warm layer for after midnight","Down jacket or second fleece"],
+  ["Spare batteries for headlamp and monitor"],
+  ["Dry firewood from home","The farm's wood is average and will be damp after Saturday's rain"],
+  ["Firelighters, lighter and dry kindling"],
+  ["Tarp","Pitch it over the seating, upwind and well clear of the flames, never directly above"],
+  ["Cord and pegs for the tarp"]]],
+ ["Drinks and treats",[
+  ["Thermos of Glühwein or a bottle to share"],
+  ["Enamel mug"],
+  ["Something non alcoholic"],
+  ["Marshmallows to share"]]],
+ ["Games that work in the dark",[
+  ["Werwölfe von Düsterwald","Built for big groups, needs almost no light"],
+  ["Wavelength or So Kleeblatt","Great once the group is warmed up"],
+  ["Hitster","Needs one phone and a speaker"],
+  ["Question cards for good conversations"],
+  ["Guitar or ukulele and a songbook"],
+  ["Small speaker with a fire playlist"]]]
+]};
+
+const IDEAS={
+ day:{title:"Together by day",intro:"Pick one or two. Kids aged 2 to 6 run out of energy fast, especially after a wet morning.",items:[
+  ["Puddle Olympics","Turn Saturday's rain into the event: longest puddle jump, muddiest Matschhose, a mud kitchen restaurant serving the parents.","Bucket, small shovel, old pots"],
+  ["Picture treasure hunt","Drawn or photo clues for kids who can't read yet: the tractor, the hen house, the big tree. It ends at a box of chocolate coins.","Clue cards, chocolate coins"],
+  ["Dusk lantern walk","All kids with lanterns or headlamps, a short loop around the farm, one song together. Calm, magical, and it makes bedtime easier.","Lanterns or kids' headlamps"],
+  ["A photo with their animal","One instant photo of every child with the animal they loved most. Later it becomes the cover of a small Ferlhof book.","Instant camera and film"],
+  ["A real farm job","Ask the farmers whether the kids can collect eggs or help feed. Pride beats entertainment.",""]]},
+ night:{title:"Parents at night",intro:"Child asleep, monitor on, fire going.",items:[
+  ["Feuerzangenbowle","A proper ritual for a cold October night. Do the flaming part well away from the tarp.","Pot, holder, Zuckerhut, 54 % rum"],
+  ["Stargazing if it clears","Skies should clear after midnight into Sunday, and the moon is close to new, so a rural sky gets properly dark.","Stellarium or a similar app"],
+  ["Question jar","Everyone writes one question anonymously, like \"Who were you at 16?\". Takes friendships past kid logistics.","Paper slips, pen, a jar"],
+  ["Youth soundtrack round","Each parent picks the one song that defines their teenage years and says why. Flows straight into Hitster.","Speaker, Hitster"],
+  ["Werwölfe in the firelight","Big group, almost no light needed, and it only gets better the longer the night goes.","Werwölfe von Düsterwald"]]}
+};
+
+const KEY="ferlhof-pack-v2";
+let state={checked:{},custom:{},hide:false};
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s)state=Object.assign(state,s)}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function itemHTML(id,text,note,custom){
+  const done=!!state.checked[id];
+  return `<li class="${done?"done":""}"><label><input type="checkbox" ${done?"checked":""} data-id="${id}"><span><span class="t">${esc(text)}</span>${note?`<span class="n">${esc(note)}</span>`:""}</span>${custom?`<button class="rm" data-rm="${id}" aria-label="Remove ${esc(text)}">×</button>`:""}</label></li>`;
+}
+function listHTML(sid,items){
+  let h="";items.forEach((it,i)=>{h+=itemHTML(sid+"-"+i,it[0],it[1])});
+  (state.custom[sid]||[]).forEach(c=>{h+=itemHTML(c.id,c.text,"",true)});
+  return h;
+}
+const addHTML=sid=>`<form class="add" data-add="${sid}"><input type="text" placeholder="Add your own item" aria-label="Add item"><button type="submit">Add</button></form>`;
+
+function renderPack(){
+  document.getElementById("day").innerHTML=SECTIONS.map(s=>`<section id="${s.id}"><h2>${s.title}<small data-c="${s.id}"></small></h2>${s.intro?`<p class="intro">${s.intro}</p>`:""}<ul>${listHTML(s.id,s.items)}</ul>${addHTML(s.id)}</section>`).join("");
+  let nh=`<section id="${NIGHT.id}"><h2>${NIGHT.title}<small data-c="${NIGHT.id}"></small></h2><p class="intro">${NIGHT.intro}</p>`;
+  NIGHT.groups.forEach((g,gi)=>{nh+=`<h3>${g[0]}</h3><ul>${listHTML("fire"+gi,g[1])}</ul>`});
+  if((state.custom.fire3||[]).length)nh+=`<h3>Your additions</h3><ul>${listHTML("fire3",[])}</ul>`;
+  nh+=addHTML("fire3")+`</section>`;
+  document.getElementById("night").innerHTML=nh;
+  document.getElementById("jump").innerHTML=[...SECTIONS,NIGHT].map(s=>`<a href="#${s.id}" data-j="${s.id}" class="${s.id==="fire"?"fire":""}">${s.title}</a>`).join("");
+  document.body.classList.toggle("hide",state.hide);
+  document.getElementById("hide").setAttribute("aria-pressed",state.hide);
+  tally();
+}
+function tally(){
+  const all=[...document.querySelectorAll("#view-pack input[type=checkbox]")];
+  const done=all.filter(c=>c.checked).length;
+  document.getElementById("count").textContent=`${done} / ${all.length}`;
+  document.getElementById("meter").style.width=(all.length?done/all.length*100:0)+"%";
+  document.getElementById("donemsg").classList.toggle("show",all.length>0&&done===all.length);
+  document.querySelectorAll("small[data-c]").forEach(el=>{
+    const b=[...document.getElementById(el.dataset.c).querySelectorAll("input[type=checkbox]")];
+    const d=b.filter(c=>c.checked).length;
+    el.textContent=`${d} of ${b.length}`;
+    const j=document.querySelector(`[data-j="${el.dataset.c}"]`);if(j)j.classList.toggle("full",b.length&&d===b.length);
+  });
+}
+function renderIdeas(){
+  const block=g=>`<section><h2>${g.title}</h2><p class="intro">${g.intro}</p>${g.items.map(i=>`<div class="idea"><h4>${esc(i[0])}</h4><p>${esc(i[1])}</p>${i[2]?`<span class="need">Bring: ${esc(i[2])}</span>`:""}</div>`).join("")}</section>`;
+  document.getElementById("ideas-day").innerHTML=block(IDEAS.day);
+  document.getElementById("ideas-night").innerHTML=block(IDEAS.night)+`<p class="tip">A late night plus kids waking at 6:30 in an unheated room is a rough mix. Agree on one night watch parent who keeps an ear on the monitors and an eye on the fire.</p>`;
+}
+
+let VIEW="pack";
+function route(){
+  let h="";try{h=location.hash||""}catch(e){}
+  if(h.startsWith("#/"))VIEW=h.startsWith("#/ideas")?"ideas":"pack";
+  const view=VIEW;
+  document.getElementById("view-pack").hidden=view!=="pack";
+  document.getElementById("view-ideas").hidden=view!=="ideas";
+  document.getElementById("packbar").hidden=view!=="pack";
+  document.querySelectorAll(".tabs a").forEach(a=>{if(a.dataset.view===view)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+}
+document.querySelector(".tabs").addEventListener("click",e=>{
+  const a=e.target.closest("a");if(!a)return;e.preventDefault();
+  try{history.pushState(null,"",a.getAttribute("href"))}catch(err){try{location.hash=a.getAttribute("href")}catch(e2){}}
+  VIEW=a.dataset.view;route();
+  document.querySelector(".bar").scrollIntoView({block:"start"});
+});
+document.getElementById("jump").addEventListener("click",e=>{
+  const a=e.target.closest("a");if(!a)return;e.preventDefault();
+  const el=document.getElementById(a.dataset.j);if(el)el.scrollIntoView({behavior:(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)?"auto":"smooth"});
+});
+window.addEventListener("popstate",route);
+window.addEventListener("hashchange",route);
+
+document.addEventListener("change",e=>{
+  const c=e.target;if(c.type!=="checkbox")return;
+  if(c.checked)state.checked[c.dataset.id]=true;else delete state.checked[c.dataset.id];
+  c.closest("li").classList.toggle("done",c.checked);save();tally();
+});
+document.addEventListener("submit",e=>{
+  e.preventDefault();const f=e.target,v=f.querySelector("input").value.trim();if(!v)return;
+  const sid=f.dataset.add;(state.custom[sid]=state.custom[sid]||[]).push({id:sid+"-c"+Date.now(),text:v});
+  save();renderPack();const again=document.querySelector(`form[data-add="${sid}"] input`);if(again)again.focus();
+});
+document.addEventListener("click",e=>{
+  const rm=e.target.closest("[data-rm]");if(!rm)return;e.preventDefault();
+  const id=rm.dataset.rm;for(const k in state.custom)state.custom[k]=state.custom[k].filter(c=>c.id!==id);
+  delete state.checked[id];save();renderPack();
+});
+document.getElementById("hide").onclick=()=>{state.hide=!state.hide;save();renderPack()};
+document.getElementById("reset").onclick=()=>{let ok=true;try{ok=confirm("Untick every item?")}catch(e){}
+  if(ok!==false){state.checked={};save();renderPack()}};
+
+document.getElementById("share").onclick=async e=>{
+  const url=location.href.split("#")[0],b=e.currentTarget;
+  try{if(navigator.share){await navigator.share({title:"Ferlhof weekend packing list",url});return}
+    await navigator.clipboard.writeText(url);b.textContent="Link copied";setTimeout(()=>b.textContent="Share with parents",2000)}catch(err){}
+};
+document.getElementById("print").onclick=()=>window.print();
+renderPack();renderIdeas();route();
+</script>
+</body>
+</html>
